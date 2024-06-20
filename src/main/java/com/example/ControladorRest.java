@@ -1,2 +1,13 @@
-package com.example;public class ControladorRest {
+package com.example;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ControladorRest {
+    @GetMapping("/")
+    public String comienzo(){
+        return "Hola Mundo";
+    }
+
 }
