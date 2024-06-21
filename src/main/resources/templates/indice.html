@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Pagina de Inicio</title>
 </head>
 <body>
     <h1>Inicio</h1>
-    <p th:text="Hola de thymeleaf"></p>
+    <p th:text="${hola}"></p>
+    <p th:text="${hola2}"></p>
+    <br>
+    Nombre: <span th:text="${individuo.nombre}"></span>
+    <br>
+    Apellido: <span th:text="${individuo.apellido}"></span>
+    <br>
+    Edad: <span th:text="${individuo.edad}"></span>
+    <br>
+    Correo: <span th:text="${individuo.correo}"></span>
+    <br>
+    Telefono: <span th:text="${individuo.telefono}"></span>
 </body>
 </html>
